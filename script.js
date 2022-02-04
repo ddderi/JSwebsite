@@ -129,7 +129,26 @@ wallet.addEventListener('click', function(e){
         wallet.removeChild(sousdiv)
     })  
 
-    
+    // to declare the function to find the BTC value for SELECT
+
+function findbtcvalue(bitbit){
+    let constt = document.createElement('p')
+            constt.innerHTML = seek
+            //console.log(constt)
+            //newdiv.append(constt)
+    let bitcoinmess = Object.entries(bitbit)
+    console.log(bitcoinmess)
+    bitcoinmess.forEach(Tbit => {
+        newO = Tbit[1]
+        for (let property in newO){
+                const valuee = document.createElement('p')
+                divv.appendChild(valuee)
+                valuee.innerHTML = `${newO[property]}`;
+                valuee.id = 'valueee'
+                valuee.classList = 'hidden'
+            }
+            
+        })}
     
     
     
@@ -141,9 +160,14 @@ wallet.addEventListener('click', function(e){
     // event listener for calculation 
     
     btn.addEventListener('click', function(e){
-        seek = slt.value
+        seek = slt.value.replace(' ', '')
+        let valuebtc = document.getElementById('valueee')
+        if(valuebtc){
+            valuebtc.innerHTML = ''
+            valuebtc.remove()
+        }else{null}
         fetchData(findbtcvalue)
-        setTimeout(calcul, 500)
+        setTimeout(calcul, 100)
     })
 
     }else{
@@ -154,35 +178,49 @@ wallet.addEventListener('click', function(e){
 
     function calcul(){
         let val = document.createElement('p')
-        divv.appendChild(val)
-        let valuebtc = document.getElementById('valuebtc')
-        console.log(valuebtc.textContent)
-        val.innerText = 'value of your wallet: '+input.value * valuebtc.innerText
-    }
+        val.id = 'val'
+        let valid = document.getElementById('val')
+        let valuebtc = document.getElementById('valueee')
+        let span = document.createElement('span')
+        span.id = 'span'
+        let spanElement = document.getElementById('span')
+        if(valid){
+            let currentvalue = spanElement.textContent
+            spanElement.textContent =  parseInt(currentvalue, 10) +(input.value * valuebtc.innerText)
+        }else{
+        divv.appendChild(val)   
+        //setTimeout(spanput, 100)  timer useless
+        let span = document.createElement('span')
+        span.id = 'span'
+        let valid = document.getElementById('val')
+        valid.textContent = 'value of your wallet: $'
+        valid.appendChild(span)
+        //setTimeout(TIMER, 100) timer useless
+        let spanElement = document.getElementById('span')
+        let valuebtc = document.getElementById('valueee')
+        spanElement.textContent = input.value * valuebtc.innerText
 
+
+    }}
+
+    //2 function useless now
     
+// function spanput(){
+//     let span = document.createElement('span')
+//     span.id = 'span'
+//     // let spanElement = document.getElementById('span')
+//     // let valuebtc = document.getElementById('valueee')
+//     // spanElement.textContent = input.value * valuebtc.innerText
+//     let valid = document.getElementById('val')
+//     valid.textContent = 'value of your wallet: '
+//     valid.appendChild(span)
+//     setTimeout(TIMER, 100)
+// }
     
-    
 
-// to declare the function to find the BTC value for SELECT
+// function TIMER(){
+//     let spanElement = document.getElementById('span')
+//     let valuebtc = document.getElementById('valueee')
+//     spanElement.textContent = input.value * valuebtc.innerText
+// }
 
-function findbtcvalue(bitbit){
-    let constt = document.createElement('p')
-            constt.innerHTML = seek
-            newdiv.append(constt)
-    let bitcoinmess = Object.entries(bitbit)
-    bitcoinmess.forEach(Tbit => {
-        newO = Tbit[1]
-        for (let property in newO){
-                const valuebtc = document.createElement('p')
-                divv.appendChild(valuebtc)
-                valuebtc.innerHTML = `${newO[property]}`;
-                valuebtc.id = 'valuebtc'
-                valuebtc.classList = 'hidden'
-            }
-            
-        })}
-
-
-
-//https://api.nomics.com/v1

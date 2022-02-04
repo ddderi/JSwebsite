@@ -101,8 +101,7 @@ html{
     font-size: 25px;
     position: absolute;
     top: 391px;
-
-
+    
 }
 
 .smallwallet{
@@ -145,4 +144,17 @@ html{
 .hidden{
     position: absolute;
     right: -500px;
+}
+
+#sousdiv{
+    padding-top: 13px;
+    font-family: 'DatalegreyaThin';
+    font-style: normal;
+
+}
+
+#val{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
 }
