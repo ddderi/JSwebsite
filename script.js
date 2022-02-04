@@ -196,14 +196,10 @@ function findbtcvalue(bitbit){
         valid.textContent = 'value of your wallet: $'
         valid.appendChild(span)
         setTimeout(TIMER, 100) 
-        // let spanElement = document.getElementById('span')
-        // let valuebtc = document.getElementById('valueee')
-        // spanElement.textContent = input.value * valuebtc.innerText
-
-
+    
     }}
 
-    //2 function useless now
+    // function useless now
     
 // function spanput(){
 //     let span = document.createElement('span')
