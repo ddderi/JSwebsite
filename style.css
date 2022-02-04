@@ -1,3 +1,6 @@
+@media screen and (min-width: 1281px){
+    
+
 html{
     background-image: url(./images/imgbackground.png) ;
     background-position: center;
@@ -158,3 +161,332 @@ html{
     font-weight: 700;
     text-align: center;
 }
+}
+@media screen and (min-width: 1025px) and (max-width: 1281px){
+    
+
+    html{
+        background-image: url(./images/imgbackground.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 1;
+        
+    }
+    
+    
+    #body {
+        font-family: 'DatalegreyaThin';
+        font-style: normal;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+         justify-content: center;
+        width: 450px;
+        margin: 210px auto;
+        vertical-align: middle;
+         background-color: rgb(231, 231, 225);  
+         z-index: 2;
+         
+        
+        
+     }
+    
+    
+     #titre{
+         font-size: 3rem;
+     }
+    
+     #wrap
+     {
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px  ;
+        height: 150px;
+        font-size: 1.7rem;
+        margin-top: 100px;
+        padding-bottom: 20px;
+     }
+    
+     #body:hover{
+        border: solid lightgray;
+         /* border-style: inset;  */
+        border-width: 1px;
+        box-shadow:20px 20px 50px gray;
+        border-radius: 20px 20px;
+        z-index: 1;
+        /* background-color: rgb(231, 231, 225); */
+        background-color: #bfbfac;
+     }
+    
+     #btc:hover{
+         text-decoration: overline rgb(156, 156, 156);
+         text-shadow: 5px 5px 10px black;
+         
+     }
+     #eth:hover{
+        text-decoration: overline  rgb(156, 156, 156);
+        text-shadow: 5px 5px 10px black;
+    }
+    #bnb:hover{
+        text-decoration: overline  rgb(156, 156, 156);
+        text-shadow: 5px 5px 10px black;
+    }
+    #ada:hover{
+        text-decoration:  overline rgb(156, 156, 156);
+        text-shadow: 5px 5px 10px black;
+    }
+    
+    .newbox{
+        width: 450px;
+        height: 390px;
+        background-color: #bfbfac;
+        position: absolute;
+        border-radius: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-size: 25px;
+        z-index: 4;
+    }
+     
+    .button{
+        background-color: #bfbfac;
+        width: 160px;
+        border-radius: 20px 20px;
+        border: solid lightgray;
+         /* border-style: inset;  */
+        border-width: 1px;
+        box-shadow:20px 20px 50px gray;
+        font-family: 'DatalegreyaThin';
+        font-style: normal;
+        font-size: 25px;
+        position: absolute;
+        top: 391px;
+        
+    }
+    
+    .smallwallet{
+        width: 80px;
+        height: 80px;
+        border: black 0.5px solid;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-image: url(./images/walletimg.png);
+        background-size: cover;
+        border-radius: 20px 20px;
+    }
+    
+    
+    .sousdiv{
+        width: 20rem;
+        height: 10rem;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        background-color: rgb(231, 231, 225);
+        border-radius: 20px 20px;
+        border: black 0.5px solid;
+        
+    }
+    
+    .input{
+        width: 20%;
+        
+    }
+    
+    .btnback{
+        width: 30%;
+        position: absolute;
+        bottom: 0px;
+        left: 112px;
+    }
+    
+    .hidden{
+        position: absolute;
+        right: -500px;
+    }
+    
+    #sousdiv{
+        padding-top: 13px;
+        font-family: 'DatalegreyaThin';
+        font-style: normal;
+    
+    }
+    
+    #val{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    }
+    @media screen and (max-width: 768px){
+    
+
+        html{
+            background-image: url(./images/imgbackground.png) ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            z-index: 1;
+            
+        }
+        
+        
+        #body {
+            font-family: 'DatalegreyaThin';
+            font-style: normal;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+             justify-content: center;
+            width: 50%;
+            margin: 10% auto;
+            vertical-align: middle;
+             background-color: rgb(231, 231, 225);  
+             z-index: 2;
+             
+            
+            
+         }
+        
+        
+         #titre{
+             font-size: 3rem;
+         }
+        
+         #wrap
+         {
+             display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 25px  ;
+            height: 150px;
+            font-size: 1.7rem;
+            margin-top: 100px;
+            padding-bottom: 20px;
+         }
+        
+         #body:hover{
+            border: solid lightgray;
+             /* border-style: inset;  */
+            border-width: 1px;
+            box-shadow:20px 20px 50px gray;
+            border-radius: 20px 20px;
+            z-index: 1;
+            /* background-color: rgb(231, 231, 225); */
+            background-color: #bfbfac;
+         }
+        
+         #btc:hover{
+             text-decoration: overline rgb(156, 156, 156);
+             text-shadow: 5px 5px 10px black;
+             
+         }
+         #eth:hover{
+            text-decoration: overline  rgb(156, 156, 156);
+            text-shadow: 5px 5px 10px black;
+        }
+        #bnb:hover{
+            text-decoration: overline  rgb(156, 156, 156);
+            text-shadow: 5px 5px 10px black;
+        }
+        #ada:hover{
+            text-decoration:  overline rgb(156, 156, 156);
+            text-shadow: 5px 5px 10px black;
+        }
+        
+        .newbox{
+            width: 450px;
+            height: 390px;
+            background-color: #bfbfac;
+            position: absolute;
+            border-radius: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            font-size: 25px;
+            z-index: 4;
+        }
+         
+        .button{
+            background-color: #bfbfac;
+            width: 160px;
+            border-radius: 20px 20px;
+            border: solid lightgray;
+             /* border-style: inset;  */
+            border-width: 1px;
+            box-shadow:20px 20px 50px gray;
+            font-family: 'DatalegreyaThin';
+            font-style: normal;
+            font-size: 25px;
+            position: absolute;
+            top: 391px;
+            
+        }
+        
+        .smallwallet{
+            width: 80px;
+            height: 80px;
+            border: black 0.5px solid;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-image: url(./images/walletimg.png);
+            background-size: cover;
+            border-radius: 20px 20px;
+        }
+        
+        
+        .sousdiv{
+            width: 20rem;
+            height: 10rem;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background-color: rgb(231, 231, 225);
+            border-radius: 20px 20px;
+            border: black 0.5px solid;
+            
+        }
+        
+        .input{
+            width: 20%;
+            
+        }
+        
+        .btnback{
+            width: 30%;
+            position: absolute;
+            bottom: 0px;
+            left: 112px;
+        }
+        
+        .hidden{
+            position: absolute;
+            right: -500px;
+        }
+        
+        #sousdiv{
+            padding-top: 13px;
+            font-family: 'DatalegreyaThin';
+            font-style: normal;
+        
+        }
+        
+        #val{
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+        }
