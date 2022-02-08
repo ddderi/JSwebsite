@@ -101,6 +101,7 @@ wallet.addEventListener('click', function(e){
         // form select creation
     const slt = document.createElement('SELECT')
     slt.id = 'slt'
+    slt.classList = 'input'
     divv.appendChild(slt)
     let coin = ['bitcoin', 'ethereum', 'binance coin', 'cardano']
     for (let i = 0;i<coin.length;i++){
@@ -116,6 +117,8 @@ wallet.addEventListener('click', function(e){
     let btn = document.createElement('button')
     divv.appendChild(btn)
     btn.textContent = 'add to your wallet'
+    btn.classList = 'input'
+    
     
     // button back to the main creation
 
@@ -123,7 +126,7 @@ wallet.addEventListener('click', function(e){
     divv.appendChild(btn2)
     btn2.textContent = 'Back'
     btn2.classList = 'btnback'
-
+    
     btn2.addEventListener('click', function(e){
         sousdiv.innerHTML = ''
         wallet.removeChild(sousdiv)
